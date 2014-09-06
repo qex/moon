@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Sunyanzi @V2EX" />
+<title>中秋自己画月亮我也是醉了</title>
+<style type="text/css">
+html {
+    width:100%;
+    height:100%;
+}
+
+body {
+    background: #000;
+    background: -webkit-linear-gradient(top, #036, #000);
+    background: -moz-linear-gradient(top, #036, #000);
+    background: -ms-linear-gradient(top, #036, #000);
+    background: -o-linear-gradient(top, #036, #000);
+}
+
+#moon{
+    background:#159;
+    text-align:center;
+}
+
+#moon:before {
+    content:'';
+    display:block;
+    height:200px;
+    width:200px;
+    border-radius:100%;
+    background :#ddd;
+    margin:auto;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+    transition:1s;
+    position:absolute;
+    top:100px;
+    left:30%;
+}
+
+#cloud {
+    width: 350px; height: 120px;
+    background: #036;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: relative;
+    left: 50%;
+    top: 300px;
+    z-index:-2;
+}
+
+#cloud:after, #cloud:before {
+    content: '';
+    position: absolute;
+    background: #036;
+    z-index:-1;
+}
+
+#cloud:after {
+    width: 100px; height: 100px;
+    top: -50px; left: 50px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+#cloud:before {
+    width: 180px; height: 180px;
+    top: -90px; right: 50px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+</style>
+</head>
+<body>
+<div id="moon"></div><div id="cloud"></div>
+</body>
+</html>
